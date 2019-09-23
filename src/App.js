@@ -1,24 +1,64 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FruitContainer from './components/FruitContainer'
 
 function App() {
+
+  const fruitList = [
+    'Acai', 
+    'Aceola',
+    'Apple',
+    'Apricots',
+    'Avocado',
+    'Banana',
+    'Blackberry',
+    'Blueberries',
+    'Camu Camu berry',
+    'Cherries',
+    'Coconut',
+    'Cranberry',
+    'Cucumber',
+    'Currents',
+    'Dates',
+    'Durian',
+    'Fig',
+    'Goji berries',
+    'Gooseberry',
+    'Grapefruit',
+    'Grapes',
+    'Jackfruit',
+    'Kiwi',
+    'Kumquat',
+    'Lemon',
+    'Lime',
+    'Lucuma',
+    'Lychee',
+    'Mango',
+    'Mangosteen',
+    'Melon',
+    'Mulberry',
+    'Nectarine',
+    'Orange',
+    'Papaya',
+    'Passion Fruit',
+    'Peach',
+    'Pear',
+    'Pineapple',
+    'Plum',
+    'Pomegranate',
+    'Pomelo',
+    'Prickly Pear',
+    'Prunes',
+    'Raspberries',
+    'Strawberries',
+    'Tangerine/Clementine',
+    'Watermelon',
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Fruit Filter</h1>
+      <FruitContainer fruits={fruitList} />
     </div>
   );
 }
